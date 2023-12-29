@@ -34,7 +34,7 @@ function checkAnswers() {
 
     // Gib das Gesamtergebnis aus
     if (allCorrect) {
-        document.getElementById("result").innerHTML = "Du hast alle Aufgaben richtig beantwortet!<br> https://drive.google.com/drive/folders/[CODE_VON_GESCHENKKARTE]6PkPoBPjQ6lQJrUvveuF15qMlRBC?usp=sharing";
+        document.getElementById("result").innerHTML = "Du hast alle Aufgaben richtig beantwortet!<br> https://drive.google.com/drive/folders/[CODE_VON_GESCHENKKARTE]rUvveuF15qMlRBC?usp=sharing";
         // Hier kannst du den Code für das Generieren und Anzeigen des Gutscheins hinzufügen
     } else {
         document.getElementById("result").innerHTML = "Leider sind nicht alle Antworten korrekt. Versuche es erneut!";
