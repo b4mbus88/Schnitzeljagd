@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rätsel-Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Willkommen auf deine Geburtstags-Schnitzeljagd!</h1>
+    <p>Du musst alle Aufgaben bestehen, um an deinen Gutschein zu kommen:</p>
+
+    <form id="riddleForm">
+        <label for="question1">Aufgabe 1:<br> <br>
+        Begib dich auf die Wikipedia-Seite mit dem Eintrag "Schnitzeljagd"<br>
+        In Kapitel 2.2 findest du eine Verlinkung zu ['geːokɛʃɪŋ].<br><br>
+        Zu welcher Seite wirst du weitergeleitet?<br>
+        </label>
+        <input type="text" id="question1" required>
+        <div id="question1Feedback"></div>
+        <br>
+
+        <label for="question2">Aufgabe 2: <br><br>
+        Begib dich auf Google-Maps zu folgender Adresse. Nutze die Wikipedia-Seite zum Lösen der Aufgabe.<br>
+        [Y1]00 N Greenville Ave, Richardson, [X1][X2] [Y2], Vereinigte Staaten<br>
+        Y1 = Anzahl der Kapitel<br>
+        Y2 = 301+390*2+sqrt(5.476.000.000)<br>
+        X1 = Erster Buchstabe aus Titel von Kapitel 3<br>
+        X2 = Neunter Buchstabe aus Titel von Kapitel 4.10<br><br>
+        Gib den Namen des Franchise an, welches du in den Bildern auf Google-Maps findest.<br>
+        </label>
+        <input type="text" id="question2" required>
+        <div id="question2Feedback"></div>
+        <br>
+
+        <label for="question3">Aufgabe 3: <br><br>
+        Begib dich wieder zu Wikipedia und suche nach der Antwort aus Aufgabe 2.<br>
+        In der Infobox auf der rechten Seite klicke auf den ersten Link in der Kathegorie "Genre".<br>
+        Hier findest du im Kapitel "Bekannte Vertreter" einen James Bond Titel.<br><br>
+        Für welche Konsole ist dieser erschienen?<br>
+        </label>
+        <input type="text" id="question3" required>
+        <div id="question3Feedback"></div>
+        <br>
+
+        <label for="question4">Aufgabe 4: <br><br>
+        Klicke auf die Verlinkung aus dem letzten Wikipedia Eintrag.<br><br>
+        Welche Taktung (in MHz) hatte der Hauptprozessor dieser Konsole?<br>
+        </label>
+        <input type="text" id="question4" required>
+        <div id="question4Feedback"></div>
+        <br>
+
+        <label for="question5">Aufgabe 5: <br><br>
+        Begib dich auch die Wikipedia-Seite der vorgänger Konsole und folge dem Link zu "Liste von [NAME_DER_KONSOLE]-Spielen"<br><br>
+        Welcher Klassiker befindet sich an der achten Stelle vom Buchstaben "S"<br>
+        </label>
+        <input type="text" id="question5" required>
+        <div id="question5Feedback"></div>
+        <br>
+        <button type="button" onclick="checkAnswers()">Antworten überprüfen</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
